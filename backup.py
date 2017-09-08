@@ -26,7 +26,7 @@ def archive():
 if(not os.path.exists(archiveName)):
 	archive()
 
-#if archive not exist ask if want to overwrite? else cancel.
+#if archive does not exist, ask if user wants to overwrite? else cancel.
 else:
 	print("Archive named \"{}\" already exists!".format(archiveName))
 	overwrite = input("Do you wish to overwrite (y/n)? ")
